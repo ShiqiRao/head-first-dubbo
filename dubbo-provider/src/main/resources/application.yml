@@ -1,0 +1,12 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: consumer
+  scan:
+    base-packages: com.dzion.provider.service,com.dzion.common.service
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
